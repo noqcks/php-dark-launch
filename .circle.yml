@@ -9,4 +9,4 @@ dependencies:
 
 test:
   override:
-    - ./vendor/behat/behat/bin/behat
+    - php ./vendor/behat/behat/bin/behat
