@@ -1,6 +1,12 @@
 machine:
   php:
-    version: '5.4'
+    version: 5.4.5
+
+dependencies:
+  override:
+    - pecl install redis
+    - composer install
+
 test:
   override:
     - ./vendor/behat/behat/bin/behat
